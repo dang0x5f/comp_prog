@@ -17,8 +17,8 @@ main(void)
     promoted_g = g1 - g0 + promoted_p;
     promoted_s = s1 - s0 + promoted_g;
 
-    printf("%d\n%d\n%d\n", promoted_p,
-           promoted_g, promoted_s);
+    printf("%d\n%d\n%d\n", promoted_s,
+           promoted_g, promoted_p);
 
     fclose(i);
     fclose(o);
