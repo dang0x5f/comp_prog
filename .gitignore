@@ -2,3 +2,6 @@ prog
 *.in
 *.out
 *.swp
+/*.swp
+*.core
+*/*.core
