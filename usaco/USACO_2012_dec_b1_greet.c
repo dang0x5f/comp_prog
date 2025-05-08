@@ -14,8 +14,15 @@ int main(void)
     for(int i = 0; i < B+E; i++)
         scanf("%d %c", &dis[i], &dir[i]);
 
-    for(int i = 0; i < B+E; i++)
-        printf("%d %c\n", dis[i], dir[i]);
+    /* for(int i = 0; i < B+E; i++) */
+    /*     printf("%d %c\n", dis[i], dir[i]); */
+
+    int moos = 0;
+    int B_loc = 0, E_loc = 0;
+
+    fclose(i);
+    fclose(o);
+    
 
     return(0);
 }
