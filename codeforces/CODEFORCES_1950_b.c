@@ -1,3 +1,10 @@
+/* Afterword:                                                       */
+/*   solve2() taken from tutorial. This works because as            */
+/*   row_count and col_count increase, dividing by 2 will return    */
+/*   even / odd in intervals of two leveraging interval division.   */
+/*   ex. ( 0/2=0 , 1/2=0 ) , ( 2/2=1 , 3/2=1 )                      */ 
+/*       ( 4/2=2 , 5/2=2 ) , ( 6/2=3 , 7/2=3 )                      */ 
+
 #include <stdio.h>
 
 void swap(char *c1, char *c2)
@@ -29,12 +36,24 @@ void solve(void)
     }
 }
 
+void solve2(void)
+{
+    int n;
+    scanf("%d",&n)&&getchar();
+    for(int i=0; i<n*2; ++i){
+        for(int j=0; j<n*2; ++j){
+            printf("%c", ((i/2 + j/2)&1?'.':'#'));
+        }
+        printf("\n");
+    }
+}
+
 int main(void)
 {
     int t;
     scanf("%d",&t)&&getchar();
     while(t--)
-        solve();
+        solve2();
 
     return(0);
 }
