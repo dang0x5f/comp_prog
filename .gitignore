@@ -1,4 +1,5 @@
 prog
+*.o
 *.in
 *.out
 *.swp
